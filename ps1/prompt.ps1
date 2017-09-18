@@ -17,7 +17,7 @@ function prompt {
 	Write-Host $env:computername -NoNewLine -ForegroundColor Blue
 	Write-Host "`:" -NoNewLine -ForegroundColor White
 	Write-Host $thisdir -NoNewLine -ForegroundColor Green
-	#git_prompt
+	git_prompt
 	Write-Host "`$" -NoNewLine -ForegroundColor White
 	
 	$pwrsh = (Get-Process -id $PID).MainWindowHandle
