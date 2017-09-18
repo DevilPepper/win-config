@@ -1,0 +1,18 @@
+[alias]
+	lg = log --oneline --decorate --graph --all
+	rmignored = ! git ls-files -iz --exclude-from=.gitignore | xargs -0n 5 git rm --cached
+	alias = ! git config --get-regexp alias | sed 's/alias\\./git /'
+	about = "!describe() { git config branch.\"$1\".description; }; describe"
+	newinit = "! f() { giturl=$(git config remote.origin.url); echo $giturl; rm -rf .git; git init; git add .; if [ $# -eq 0 ]; then git commit -m 'New initial commit'; else git commit -m \"$1\"; fi; git remote add origin $giturl; git push -u --force origin master; }; f"
+[user]
+	email = StuffQilla@gmail.com
+	name = SupaStuff
+[push]
+	default = simple
+[core]
+	autocrlf = input
+	editor = vim
+[color]
+	ui = true
+[credential]
+	helper = manager
