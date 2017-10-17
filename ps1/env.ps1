@@ -6,6 +6,8 @@ $shell.ForegroundColor = "White"
 #fix git log and possibly other stuff
 $env:term = "xterm"
 
+$env:PSModulePath += ";$home\win-config\modules"
+
 Import-Module PSReadLine
 
 Set-PSReadLineOption -HistoryNoDuplicates
