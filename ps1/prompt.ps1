@@ -10,7 +10,7 @@ function prompt {
 	}
 
 	Write-Host "[" -NoNewLine -ForegroundColor White
-	Write-Host $(Get-Date -format t) -NoNewLine -ForegroundColor Red
+	Write-Host $(Get-Date -uformat "%I:%M %p") -NoNewLine -ForegroundColor Red
 	Write-Host "]" -NoNewLine -ForegroundColor White
 	Write-Host $env:username -NoNewLine -ForegroundColor Blue
 	Write-Host "@" -NoNewLine -ForegroundColor White

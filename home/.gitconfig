@@ -2,15 +2,28 @@
 	lg = log --oneline --decorate --graph --all
 	rmignored = ! git ls-files -iz --exclude-from=.gitignore | xargs -0n 5 git rm --cached
 	alias = ! git config --get-regexp alias | sed 's/alias\\./git /'
-	about = "!describe() { git config branch.\"$1\".description; }; describe"
 	newinit = "! f() { giturl=$(git config remote.origin.url); echo $giturl; rm -rf .git; git init; git add .; if [ $# -eq 0 ]; then git commit -m 'New initial commit'; else git commit -m \"$1\"; fi; git remote add origin $giturl; git push -u --force origin master; }; f"
+
+	co          = checkout
+    about       = ! git description $(git branch | grep \\* | cut -d ' ' -f2)
+    trim        = ! git_diff_upstream_local | xargs git delete
+
+    delete      = "!git_delete() { git branch -D $* && git push origin --delete $*; }; git_delete"
+    description = "!git_describe() { git config branch.$1.description; }; git_describe"
+    new         = "!git_new() { git checkout -b $1 && git push -u origin $1 || git checkout -; }; git_new"
+    sync        = "!git_sync() { git checkout $1 && git fetch upstream $1 && git reset --hard FETCH_HEAD && git push --force; git checkout -; }; git_sync"
+
+    bb          = "!git_bb() { repo=$1; shift; git clone git@bitbucket.org:$repo.git $*; }; git_bb"
+    gh          = "!git_gh() { repo=$1; shift; git clone git@github.com:$repo.git $*; }; git_gh"
+    gl          = "!git_gl() { repo=$1; shift; git clone git@gitlab.com:$repo.git $*; }; git_gl"
+
 [user]
 	email = StuffQilla@gmail.com
 	name = SupaStuff
 [push]
 	default = simple
 [core]
-	autocrlf = input
+	autocrlf = true
 	editor = vim
 [color]
 	ui = true
