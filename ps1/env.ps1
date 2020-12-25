@@ -8,12 +8,15 @@ $env:term = "xterm"
 
 $env:PSModulePath += ";$home\win-config\modules"
 
+$env:Path += ";C:\Program Files\Oracle\VirtualBox"
+
 Import-Module PSReadLine
 
 Set-PSReadLineOption -HistoryNoDuplicates
 Set-PSReadLineOption -HistorySearchCursorMovesToEnd
 Set-PSReadLineOption -HistorySaveStyle SaveIncrementally
 Set-PSReadLineOption -MaximumHistoryCount 4000
+Set-PSReadlineOption -BellStyle None
 # history substring search
 Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
