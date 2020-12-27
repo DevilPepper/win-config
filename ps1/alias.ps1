@@ -1,13 +1,15 @@
 Import-Module Get-ChildItemColor
 Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
 
-function start-arch-vm(){
-    VBoxManage startvm "Arch"
-}
-
 function su()
 {
-    Start-Process powershell -Verb runAs
+    sudo powershell
 }
 
-Set-Alias arch start-arch-vm
+function sudo($command) {
+    Start-Process $command -Verb runAs
+}
+
+function which($command) {
+    $(Get-Command $command).Source
+}

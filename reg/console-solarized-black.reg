@@ -34,7 +34,7 @@ Windows Registry Editor Version 5.00
 "ColorTable04"=dword:00164bcb
 "ColorTable05"=dword:00c4716c
 "ColorTable06"=dword:00837b65
-"ColorTable07"=dword:00d5e8ee
+"ColorTable07"=dword:00969483
 "ColorTable08"=dword:00423607
 "ColorTable09"=dword:00d28b26
 "ColorTable10"=dword:00009985
@@ -45,9 +45,9 @@ Windows Registry Editor Version 5.00
 "ColorTable15"=dword:00e3f6fd
 "ScreenColors"=dword:00000001
 "PopupColors"=dword:000000f6
-"FontFamily"=dword:00000030
+"FontFamily"=dword:00000036
 "FaceName"="Consolas"
-"FontSize"=dword:00000010
+"FontSize"=dword:00100000
 "FullScreen"=dword:00000001
 "WindowAlpha"=dword:00000000
 "AllowAltF4Close"=dword:00000001

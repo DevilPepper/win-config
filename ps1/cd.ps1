@@ -2,7 +2,10 @@ remove-item alias:cd -force
 Set-Variable -Name dashDir -Value "" -Scope global;
 function cd($target)
 {
-    if($target.EndsWith(".lnk"))
+    if(!$target) {
+        set-location ~
+    }
+    elseif($target.EndsWith(".lnk"))
     {
         $sh = new-object -com wscript.shell
         $targetpath = $sh.CreateShortcut($target).TargetPath

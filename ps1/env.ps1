@@ -8,8 +8,6 @@ $env:term = "xterm"
 
 $env:PSModulePath += ";$home\win-config\modules"
 
-$env:Path += ";C:\Program Files\Oracle\VirtualBox"
-
 Import-Module PSReadLine
 
 Set-PSReadLineOption -HistoryNoDuplicates

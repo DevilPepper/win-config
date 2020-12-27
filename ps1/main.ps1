@@ -5,6 +5,7 @@
 . "~/win-config/ps1/cd.ps1"
 # . "~/win-config/ps1/wfh.ps1"
 . "~/win-config/ps1/alias.ps1"
+. "~/win-config/ps1/functions.ps1"
 
 # . "~/win-config/ps1/docker.ps1"
 

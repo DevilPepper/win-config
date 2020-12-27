@@ -8,6 +8,8 @@
 #
 # License: MIT, unless the authors of those two gists object :)
 
+# currently requires sed - `choco install sed`
+
 function git_branch() {
     # -- Finds and outputs the current branch name by parsing the list of
     #    all branches
