@@ -77,7 +77,7 @@ function git_prompt($branch) {
 
     if($env:supports_powerline -eq $True){
         Write-Host "$prompt_separator " -NoNewLine -BackgroundColor $color  -ForegroundColor Green
-        Write-Host "$git_char $branch" -NoNewLine -BackgroundColor $color
+        Write-Host "$git_char $branch" -NoNewLine -BackgroundColor $color -ForegroundColor White
         Write-Host "$final_separator"  -NoNewLine -BackgroundColor Black -ForegroundColor $color
     }else {
         Write-Host " (" -NoNewLine -ForegroundColor White
