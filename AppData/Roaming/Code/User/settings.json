@@ -8,7 +8,7 @@
     "terminal.integrated.fontSize": 16,
     "editor.fontSize": 16,
     "editor.fontLigatures": true,
-    "terminal.integrated.fontFamily": "'Cascadia Code PL', 'Cascadia Code', Consolas, 'Courier New', monospace",
+    "terminal.integrated.fontFamily": "'CaskaydiaCove NF', 'Cascadia Code', Consolas, 'Courier New', monospace",
     "workbench.colorCustomizations": {
         "terminal.foreground": "#839496",
         // "terminal.background": "#002833",586e75

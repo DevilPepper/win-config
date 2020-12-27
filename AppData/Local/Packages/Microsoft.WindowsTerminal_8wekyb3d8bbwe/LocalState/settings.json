@@ -34,7 +34,7 @@
         "defaults": {
             "useAcrylic": true,
             "acrylicOpacity": 0.77,
-            "fontFace": "Cascadia Code PL",
+            "fontFace": "CaskaydiaCove NF",
             "colorScheme": "solarized-black"
             // Put settings here that you want to apply to all profiles.
         },

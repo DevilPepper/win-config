@@ -1,5 +1,11 @@
 function togglePowerline() {
-    $env:supports_powerline = $env:supports_powerline -xor $TRUE
+    # xor doesn't work and if(!$var) isn't enough
+    if($env:supports_powerline -eq $False) {
+        $env:supports_powerline = $True
+    } else {
+        $env:supports_powerline = $False
+    }
+    # $env:supports_powerline = $env:supports_powerline -xor 1
     [Environment]::SetEnvironmentVariable("supports_powerline", $env:supports_powerline, [System.EnvironmentVariableTarget]::User)
 }
 

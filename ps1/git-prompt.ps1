@@ -57,7 +57,7 @@ function git_color($state) {
     # - Yellow if there are both staged and unstaged changes
     # - Blue if there are unpushed commits
 	
-	$color = "white"
+	$color = "DarkGray"
 	if($state.count -gt 0)
 	{
 		if($($state -contains "|")){$color = "yellow"}    # unmerged
@@ -71,18 +71,17 @@ function git_color($state) {
 	return $color
 }
 
-function git_prompt() {
-    # First, get the branch name...
-    $branch = $(git_branch)
-    # Empty output? Then we're not in a Git repository, so bypass the rest
-    # of the function, producing no output
-    if($branch)
-	{
-        $state = $(git_status)
-        $color = $(git_color $state)
+function git_prompt($branch) {
+    $state = $(git_status)
+    $color = $(git_color $state)
 
-		Write-Host " (" -NoNewLine -ForegroundColor White
-		Write-Host "$branch" -NoNewLine -ForegroundColor $color
-		Write-Host ")" -NoNewLine -ForegroundColor White
+    if($env:supports_powerline -eq $True){
+        Write-Host "$prompt_separator " -NoNewLine -BackgroundColor $color  -ForegroundColor Green
+        Write-Host "$git_char $branch" -NoNewLine -BackgroundColor $color
+        Write-Host "$final_separator"  -NoNewLine -BackgroundColor Black -ForegroundColor $color
+    }else {
+        Write-Host " (" -NoNewLine -ForegroundColor White
+        Write-Host "$branch" -NoNewLine -ForegroundColor $color
+        Write-Host ")" -NoNewLine -ForegroundColor White
     }
 }
