@@ -16,11 +16,11 @@ function prompt {
 		Write-Host "$PL_Fire " -NoNewLine -ForegroundColor Black -BackgroundColor Blue
 		
 		# Write-Host "$prompt_separator" -NoNewLine -ForegroundColor Black -BackgroundColor Blue
-		Write-Host $env:username -NoNewLine -BackgroundColor Blue
-		Write-Host "@" -NoNewLine -BackgroundColor Blue -ForegroundColor Black
-		Write-Host $env:computername -NoNewLine -BackgroundColor Blue -ForegroundColor White
+		Write-Host $env:username -NoNewLine -BackgroundColor Blue -ForegroundColor White
+		Write-Host "@" -NoNewLine -BackgroundColor Blue -ForegroundColor DarkMagenta
+		Write-Host "$env:computername " -NoNewLine -BackgroundColor Blue -ForegroundColor White
 		Write-Host "$prompt_separator" -NoNewLine -ForegroundColor Blue -BackgroundColor Green
-		Write-Host $thisdir -NoNewLine -ForegroundColor White -BackgroundColor Green
+		Write-Host "$thisdir " -NoNewLine -ForegroundColor White -BackgroundColor Green
 		if($branch){
 			git_prompt $branch
 		} else {
