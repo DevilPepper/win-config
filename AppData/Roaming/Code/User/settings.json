@@ -31,4 +31,7 @@
         "terminalCursor.foreground": "#839496",
         "terminalCursor.background": "#003541"
     },
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.enablePersistentSessions": false,
 }
