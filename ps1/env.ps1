@@ -36,3 +36,21 @@ $prompt_separator = "$PL_digitize "
 $final_separator = "$prompt_separator"
 
 $git_char = [char]0xe0a0
+
+$env:Path+=";C:\Program Files (x86)\Steam"
+foreach ($d in $(dir ~/bin)) {
+    $env:Path+=";$d"
+}
+
+# vcpkg
+$env:Path+=";C:\dev\vcpkg"
+$env:VCPKG_DEFAULT_TRIPLET="x64-windows"
+$env:VCPKG_FEATURE_FLAGS="manifests,versions"
+$env:VCPKG_DISABLE_METRICS=$True
+
+$env:VCPKG_ROOT="C:/dev/vcpkg"
+
+$env:CMAKE_PREFIX_PATH="$(Join-String -Separator ';' -InputObject $(dir C:/dev/lib))";
+
+# RE
+$env:Path+=";$home\code\game-mods\tools\rizen\build\bin"

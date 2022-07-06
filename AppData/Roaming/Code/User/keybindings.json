@@ -22,5 +22,15 @@
         "key": "ctrl+b",
         "command": "-markdown.extension.editing.toggleBold",
         "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
     }
 ]
