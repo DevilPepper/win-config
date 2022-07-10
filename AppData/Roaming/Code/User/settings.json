@@ -3,6 +3,9 @@
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
       "path": "C:/Program Files/PowerShell/7/pwsh.exe",
+      "args": [
+        "-nologo"
+      ]
     }
   },
   "terminal.integrated.profiles.linux": {
