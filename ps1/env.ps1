@@ -23,19 +23,17 @@ Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
 Set-PSReadlineKeyHandler -Chord 'Shift+Tab' -Function MenuComplete
 Set-PSReadlineKeyHandler -Key Tab -Function Complete
 
-$PL_fire=[char]0xe0c0
-$PL_lego=[char]0xe0ce
-$PL_graph=[char]0xe0c8
-$PL_digitize=[char]0xe0c6
-$PL_Triangle=[char]0xe0b0
-$PL_Round=[char]0xe0b4
-$PL_Hex=[char]0xe0cc
-$floating_ghost=[char]0xe007
-
-$prompt_separator = "$PL_digitize "
-$final_separator = "$prompt_separator"
-
-$git_char = [char]0xe0a0
+$PL = @{
+  fire=[char]0xe0c0;
+  lego=[char]0xe0ce;
+  graph=[char]0xe0c8;
+  digitize=[char]0xe0c6;
+  triangle=[char]0xe0b0;
+  round=[char]0xe0b4;
+  hex=[char]0xe0cc;
+  floating_ghost=[char]0xe007;
+  git_char = [char]0xe0a0;
+}
 
 $env:Path+=";C:\Program Files (x86)\Steam"
 foreach ($d in $(dir ~/bin)) {
