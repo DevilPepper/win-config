@@ -9,8 +9,6 @@
 
 # . "~/win-config/ps1/docker.ps1"
 
-Clear-Host
-
 [regex]$ms_pattern = "\s*Microsoft\s*"
 $win_os = $ms_pattern.replace($(Get-CimInstance Win32_OperatingSystem).Caption, "", 1)
 $win_version = (Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion" -Name ReleaseId).ReleaseId

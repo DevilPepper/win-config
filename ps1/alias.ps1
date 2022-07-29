@@ -1,4 +1,4 @@
-Import-Module Get-ChildItemColor
+Import-Module Get-ChildItemColor/src/Get-ChildItemColor
 Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
 
 function su()

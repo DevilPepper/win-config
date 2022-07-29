@@ -3,15 +3,15 @@
   "$schema": "https://aka.ms/terminal-profiles-schema",
   "actions": [
     {
+      "command": "paste",
+      "keys": "ctrl+v"
+    },
+    {
       "command": {
         "action": "copy",
         "singleLine": false
       },
       "keys": "ctrl+c"
-    },
-    {
-      "command": "paste",
-      "keys": "ctrl+v"
     },
     {
       "command": "find",
@@ -36,71 +36,32 @@
     "defaults": {
       "colorScheme": "solarized-black",
       "font": {
-        "face": "CaskaydiaCove NF"
+        "face": "Cascadia Code"
       },
       "opacity": 45,
       "useAcrylic": true
     },
     "list": [
       {
-        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-        "hidden": true,
-        "name": "Windows PowerShell"
-      },
-      {
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
         "hidden": false,
         "name": "Command Prompt"
       },
       {
-        "commandline": "\"C:\\Users\\stuff\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe\" -nologo",
+        "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\" -nologo",
         "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
         "hidden": false,
+        "icon": "ms-appx:///ProfileIcons/pwsh.png",
         "name": "PowerShell",
         "source": "Windows.Terminal.PowershellCore"
       },
       {
-        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-        "hidden": true,
-        "name": "Azure Cloud Shell",
-        "source": "Windows.Terminal.Azure"
-      },
-      {
-        "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+        "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\" -nologo",
+        "elevate": true,
+        "guid": "{13724ace-a597-46ea-b5e7-2cb6d6f6b4ff}",
         "hidden": false,
-        "name": "Debian",
-        "source": "Windows.Terminal.Wsl"
-      },
-      {
-        "commandline": "powershell.exe -nologo -Command Start-Process -Verb RunAs \"shell:appsFolder\\Microsoft.WindowsTerminal_8wekyb3d8bbwe!App\"",
-        "guid": "{9ef723c0-dd11-4491-994f-9bf5c89e2eb1}",
-        "icon": "ms-appx:///ProfileIcons/pwsh.png",
-        "name": "SupaPowerShell",
-        "startingDirectory": "%USERPROFILE%"
-      },
-      {
-        "guid": "{dc23ee9a-91b3-5b67-a15b-531e1ca3dd81}",
-        "hidden": false,
-        "name": "Developer Command Prompt for VS 2019",
-        "source": "Windows.Terminal.VisualStudio"
-      },
-      {
-        "guid": "{415f3d68-1ca3-52ae-a539-4e1419aaf34f}",
-        "hidden": false,
-        "name": "Developer PowerShell for VS 2019",
-        "source": "Windows.Terminal.VisualStudio"
-      },
-      {
-        "guid": "{bc870b39-29c8-5f65-803b-f58fd060da31}",
-        "hidden": true,
-        "name": "Developer Command Prompt for VS 2019",
-        "source": "Windows.Terminal.VisualStudio"
-      },
-      {
-        "guid": "{47c75d32-897d-5781-a0ac-f17b4803824f}",
-        "hidden": true,
-        "name": "Developer PowerShell for VS 2019",
-        "source": "Windows.Terminal.VisualStudio"
+        "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
+        "name": "SupaPowerShell"
       }
     ]
   },
