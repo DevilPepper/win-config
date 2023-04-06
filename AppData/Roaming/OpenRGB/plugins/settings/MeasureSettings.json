@@ -1,0 +1,178 @@
+[
+    {
+        "auto_start": true,
+        "brightness": 25,
+        "devices": [
+            {
+                "brightness": 100,
+                "description": "NZXT Hue 2 Device",
+                "is_percentage_fill": false,
+                "location": "HID: \\\\?\\HID#VID_1E71&PID_2006#9&2d827572&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}",
+                "name": "NZXT Smart Device V2",
+                "reverse": false,
+                "serial": "00000000001A",
+                "vendor": "NZXT",
+                "version": "1.5.0",
+                "zone_idx": 0
+            }
+        ],
+        "fps": 60,
+        "hardware": 0,
+        "hardware_feature": 98,
+        "hardware_identifier": "/amdcpu/0/temperature/2",
+        "measure_color": {
+            "color_stops": [
+                [
+                    0.0,
+                    16776960
+                ],
+                [
+                    70.0,
+                    16733610
+                ],
+                [
+                    90.0,
+                    255
+                ]
+            ]
+        },
+        "name": "CPU",
+        "refresh_interval": 100,
+        "running": true
+    },
+    {
+        "auto_start": true,
+        "brightness": 3,
+        "devices": [
+            {
+                "brightness": 100,
+                "description": "ENE SMBus Device",
+                "is_percentage_fill": false,
+                "location": "I2C: NVidia NvAPI I2C on GPU 0, address 0x67",
+                "name": "ASUS TUF RTX 3080Ti O12G GAMING",
+                "reverse": false,
+                "serial": "",
+                "vendor": "ASUS",
+                "version": "AUMA0-E6K5-0107",
+                "zone_idx": 0
+            }
+        ],
+        "fps": 60,
+        "hardware": 7,
+        "hardware_feature": 0,
+        "hardware_identifier": "/gpu-nvidia/0/temperature/0",
+        "measure_color": {
+            "color_stops": [
+                [
+                    0.0,
+                    16776960
+                ],
+                [
+                    70.0,
+                    16733610
+                ],
+                [
+                    90.0,
+                    255
+                ]
+            ]
+        },
+        "name": "GPU",
+        "refresh_interval": 100,
+        "running": true
+    },
+    {
+        "auto_start": true,
+        "brightness": 3,
+        "devices": [
+            {
+                "brightness": 100,
+                "description": "Corsair Vengeance Pro RGB Device",
+                "is_percentage_fill": true,
+                "location": "I2C: AMD SMBus at 0x0B00, address 0x5A",
+                "name": "Corsair Vengeance Pro RGB",
+                "reverse": false,
+                "serial": "",
+                "vendor": "Corsair",
+                "version": "",
+                "zone_idx": 0
+            },
+            {
+                "brightness": 100,
+                "description": "Corsair Vengeance Pro RGB Device",
+                "is_percentage_fill": true,
+                "location": "I2C: AMD SMBus at 0x0B00, address 0x5B",
+                "name": "Corsair Vengeance Pro RGB",
+                "reverse": false,
+                "serial": "",
+                "vendor": "Corsair",
+                "version": "",
+                "zone_idx": 0
+            }
+        ],
+        "fps": 60,
+        "hardware": 3,
+        "hardware_feature": 0,
+        "hardware_identifier": "/ram/data/0",
+        "measure_color": {
+            "color_stops": [
+                [
+                    0.0,
+                    16776960
+                ],
+                [
+                    50.0,
+                    16733610
+                ],
+                [
+                    100.0,
+                    255
+                ]
+            ]
+        },
+        "name": "RAM",
+        "refresh_interval": 100,
+        "running": true
+    },
+    {
+        "auto_start": true,
+        "brightness": 100,
+        "devices": [
+            {
+                "brightness": 100,
+                "description": "IT8297BX-GBX570",
+                "is_percentage_fill": false,
+                "location": "HID: \\\\?\\HID#VID_048D&PID_8297&Col02#9&3868a9be&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}",
+                "name": "X570 I AORUS PRO WIFI",
+                "reverse": false,
+                "serial": "0x82970100",
+                "vendor": "Gigabyte",
+                "version": "0x00060001",
+                "zone_idx": 1
+            }
+        ],
+        "fps": 60,
+        "hardware": 8,
+        "hardware_feature": 0,
+        "hardware_identifier": "/nvme/0/temperature/0",
+        "measure_color": {
+            "color_stops": [
+                [
+                    0.0,
+                    16776960
+                ],
+                [
+                    50.0,
+                    16733610
+                ],
+                [
+                    70.0,
+                    255
+                ]
+            ]
+        },
+        "name": "SSD",
+        "refresh_interval": 100,
+        "running": true
+    }
+]
